@@ -9,8 +9,7 @@
 
 
 body { 
-    display: flex;
-    flex-direction: column;
+    background: #fff;
     min-height: 100vh;
 
 }
@@ -19,7 +18,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 80px 10%;
-    background-color: #1F29;
+    background-color: #1F2937;
 
     
     
@@ -27,22 +26,24 @@ body {
 }
 .main-content {
     flex: 1;
+    margin-right: 40px;
 }
 .main h1 {
     font-size: 50px;
-    color: green;
+    font-size: 48px;
+    color: #F9FAF8;
     margin-bottom: 20px;
-    font-weight: extrabold;
+    font-weight: bold;
 }
 .button {
     
     color: white;
-    background-color: #3882f6;
+    
     font-size: 20px;
     border-radius: 5px;
-    padding: 10px 20px;
+    padding: 8px 32px;
     border: none;
-    background-color: blue;
+    background: #3882f6;
     font-weight: bold;
     cursor: pointer;
 }
@@ -50,43 +51,40 @@ body {
     display: flex;
     flex: 1;
     height: 250px;
-    background-color: gray;
+    background: #6d747d;
     justify-content: center;
-    
+    font-size: 18px;
     align-items: center;
     color:#E5E7EB;
+    margin-left: 40px;
     
     
 }
 .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    
     width: 100%;
-    height: 100%;
-    margin-left: 70px;
+    
 }
-.header {
+header {
     display: flex;
-    flex-direction: column;
+    
     justify-content: space-between;
     align-items: center;
-    background-color: black;
+    background: #1F2937;
     padding: 20px 10%;
 }
 .logo {
     font-size: 30px;
     font-weight: bold;
-    color: red;
+    color: #F9FAF8;
 }
 .header-links {
     display: flex;
-    gap: 20px;
+    gap: 32px;
     
 }
 .header-links a {
-    color: blue;
+    color: #E5E7EB;
     text-decoration: none;
     font-size: 18px;
 }
@@ -98,69 +96,76 @@ body {
 .info-section {
     padding: 50px 10%;
     text-align: center;
+    background: #fff;
 }
 .info-section h2 {
-    font-size: 40px;
-    color: green;
-    margin-bottom: 20px;
+    font-size: 32px;
+    color: #1F2937;
+    font-weight: bold;
+    margin-bottom: 32px;
 }
 .info-items {
     display: flex;
     justify-content: center;
-    gap: 50px;
+    gap: 36px;
     flex-wrap: wrap;
 }
 .info-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     
-    
-    
-    
-    width: 300px;
+    width: 180px;
     
 }
 .info-box {
-    width: 150px;
-    height: 150px;
+    width: 140px;
+    height: 140px;
     border: 3px solid #3882f6;
-    border-radius: 15px;
-    margin-bottom: 10px;
+    border-radius: 16px;
+    margin-bottom: 12px;
+    background: #fff;
 }
 .info-text {
     font-size: 18px;
-    color: #E5E;
+    color: #5a5a5a;
+    margin-top: 8px;
     
 }
 .quote-section {
-    background-color: #1F29;
+    background: #E5E7EB;
     padding: 50px 10%;
-    
+    text-align: center;
 }
     .quote-text {
         font-size: 24px;
-        color: black;
-        font-weight: light;
+        color: #1F2937;
+        font-weight: 300;
         font-style: italic;
-        margin-bottom: 20px;
+        margin-bottom: 24px;
     }
 .quote-author {
         font-size: 20px;
-        color: #3882f6;
+        color: #1F2937;
         font-weight: bold;
+        text-align: right;
+        margin-right: 40px;
     }
 .footer {
-    background-color: black;
-    margin: 80px 15%;
-    padding: 20px 100px;
+    background-color: #3882f6;
+    margin: 64px 10%;
+    padding: 40px 60px;
     color: white;
-    border-radius: 8px;
+    border-radius: 12px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 .cta-text h3 {
     font-size: 24px;
-    
+    font-weight: bold;
     margin-bottom: 10px;
+    color: #fff;
 }
 .cta-text p {
     font-size: 18px;
@@ -168,14 +173,14 @@ body {
 }
 .cta-button {
     color: white;
-    background-color: #3882f6;
+    background: transparent;
     font-size: 20px;
     border-radius: 5px;
-    padding: 10px 20px;
+    padding: 8px 32px;
     border: 2px solid white;
     font-weight: bold;
     cursor: pointer;
-    flex-shrink: 0;
+    transition: background 0.3s, color 0.3s;
 }
 .cta-button:hover {
     background-color: #1F29;
